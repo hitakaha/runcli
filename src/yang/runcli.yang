@@ -1,0 +1,56 @@
+module runcli {
+  namespace "http://com/example/runcli";
+  prefix runcli;
+
+  import ietf-inet-types {
+    prefix inet;
+  }
+  import tailf-ncs {
+    prefix ncs;
+  }
+  import tailf-common {
+    prefix tailf;
+  }
+
+  augment /ncs:devices {
+    tailf:action runcli-dryrun {
+      tailf:exec "runcli-dryrun.sh";
+      input {
+        leaf device {
+          type string;
+        }
+        leaf command {
+          type string;
+        }
+      }
+
+      output {
+        leaf output {
+          type string;
+        }
+      }
+
+    } //runcli-dryrun
+
+    tailf:action runcli-commit {
+      tailf:exec "runcli-commit.sh";
+      input {
+        leaf device {
+          type string;
+        }
+        leaf command {
+          type string;
+        }
+      }
+
+      output {
+        leaf output {
+          type string;
+        }
+      }
+
+    } //runcli-commit
+
+  } //augment
+
+}

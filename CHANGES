@@ -1,0 +1,21 @@
+runcli v2.0.0 [2024-6-16]
+================================================================================
+The first release of the package
+
+Enhancements:
+
+  - Commit operation is supported
+  - Include install/uninstall scripts
+
+
+Corrections:
+
+  - N/A
+
+
+
+runcli v1.0.1 [2024-6-8]
+================================================================================
+The beta release of the package.
+Only supports dry-run. Commit operation is not supporeted.
+
