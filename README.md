@@ -40,6 +40,7 @@ runcli package README
   If it does not work, check the script works on the NSO server.
 
   To test the script itself, use following CLI.
+
   $ $NCS_DIR/bin/runcli-dryrun.sh "device" "R1" "command" "testtest"
 
 
