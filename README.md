@@ -18,7 +18,9 @@ runcli package README
   Following is sample output.
 
   $ ./install.sh 
+
   Copying runcli.sh to NSO-6.1.2/bin
+
   Successfully installed!
 
 
