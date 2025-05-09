@@ -45,5 +45,15 @@ runcli package README
 
 
 -----------------------
-5. END OF README FILE
+5. Uninstall
+-----------------------
+
+  To uninstall the package, execute following first.
+
+  $ ./uninstall.sh 
+
+  Then, remove the package and execute "packages reload" in NSO.
+
+-----------------------
+6. END OF README FILE
 -----------------------
